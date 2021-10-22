@@ -3,4 +3,4 @@ const Post = require('./Post');
 
 User.hasMany(Post);
 
-module.exports = { User, Post }
+module.exports = { User, Post };
