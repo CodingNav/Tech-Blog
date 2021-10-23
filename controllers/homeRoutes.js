@@ -7,13 +7,10 @@ router.get('/', async (req, res) => {
     // Get all posts and JOIN with user data
     const postData = await Post.findAll({
       include: [
-        {
-          model: User,
-          attributes: ['username'],
-        },
+        { all: true, nested: true },
       ],
     });
-
+    console.log(postData);
     // Serialize data so the template can read it
     const posts = postData.map((post) => post.get({ plain: true }));
 
@@ -72,7 +69,7 @@ router.get('/post/:id', async (req, res) => {
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/profile');
+    res.redirect('/');
     return;
   }
 
