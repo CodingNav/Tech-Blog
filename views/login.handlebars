@@ -2,6 +2,7 @@
 
     {{!-- Login --}}
     <div class="column is-half">
+        <form class="login-form">
         <h1>Login</h1>
 
         {{!-- username --}}
@@ -17,9 +18,9 @@
 
         {{!-- password --}}
         <div class="field">
-            <label id="password-signup" class="label" for="password-login">Password</label>
+            <label class="label" for="password-login">Password</label>
             <div class="control has-icons-left has-icons-right">
-                <input class="input" type="password" placeholder="Password" value="">
+                <input id="password-login" class="input" type="password" placeholder="Password" value="">
                 <span class="icon is-small is-left">
                     <i class="fas fa-lock"></i>
                 </span>
@@ -32,10 +33,12 @@
                 <button class="button is-link" type="submit">Login</button>
             </div>
         </div>
+        </form>
     </div>
 
     {{!-- Signup --}}
     <div class="column">
+        <form class="signup-form">
         <h1>Signup</h1>
 
         {{!-- username --}}
@@ -78,7 +81,8 @@
                 <button class="button is-link" type="submit">Signup</button>
             </div>
         </div>
+        </form>
     </div>
 
-
-        <script src="./js/login.js"></script>
+</div>
+<script src="./js/login.js"></script>
