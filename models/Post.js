@@ -19,9 +19,10 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        date: {
+        date_created: {
             type: DataTypes.INTEGER,
             allowNull: false,
+            defaultValue: DataTypes.NOW
         },
         // Foreign Key
         user_id: {
