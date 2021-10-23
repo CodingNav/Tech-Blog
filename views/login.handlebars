@@ -1,38 +1,84 @@
-<div class="row">
-  <div class="col-md-6">
-    <h2>Login</h2>
+<div class="column">
 
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="username-login">username:</label>
-        <input class="form-input" type="text" id="username-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
-      </div>
-    </form>
-  </div>
-  <div class="col-md-6">
-    <h2>Signup</h2>
+    {{!-- Login --}}
+    <div class="column is-half">
+        <h1>Login</h1>
 
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="username-signup">username:</label>
-        <input class="form-input" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">signup</button>
-      </div>
-    </form>
-  </div>
-</div>
+        {{!-- username --}}
+        <div class="field">
+            <label class="label" for="username-login">Username</label>
+            <div class="control has-icons-left has-icons-right">
+                <input id="username-login" class="input is-success" type="text" placeholder="Text input" value="">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
+            </div>
+        </div>
 
-<script src="./js/login.js"></script>
+        {{!-- password --}}
+        <div class="field">
+            <label id="password-signup" class="label" for="password-login">Password</label>
+            <div class="control has-icons-left has-icons-right">
+                <input class="input is-danger" type="password" placeholder="Password input" value="">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                </span>
+            </div>
+        </div>
+
+        {{!-- login btn --}}
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link" type="submit">Login</button>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Signup --}}
+    <div class="column is-half">
+        <h1>Signup</h1>
+
+        {{!-- username --}}
+        <div class="field">
+            <label class="label" for="username-signup">Username</label>
+            <div class="control has-icons-left has-icons-right">
+                <input id="username-signup" class="input is-success" type="text" placeholder="Text input" value="">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
+            </div>
+            <p class="help is-success">This username is available</p>
+        </div>
+
+        {{!-- password --}}
+        <div class="field">
+            <label class="label" for="password-signup">Password</label>
+            <div class="control has-icons-left has-icons-right">
+                <input id="password-signup" class="input is-danger" type="password" placeholder="Password input" value="">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                </span>
+            </div>
+            <p class="help is-danger">This password is invalid</p>
+        </div>
+
+        {{!-- terms and conditions --}}
+        <div class="field">
+            <div class="control">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    I agree to the <a href="#">terms and conditions</a>
+                </label>
+            </div>
+        </div>
+
+        {{!-- signup btn --}}
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link" type="submit">Signup</button>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="./js/login.js"></script>
