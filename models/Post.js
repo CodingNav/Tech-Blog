@@ -15,12 +15,12 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        comment: {
+        message: {
             type: DataTypes.STRING,
             allowNull: false,
         },
         date_created: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.DATE,
             allowNull: false,
             defaultValue: DataTypes.NOW
         },
