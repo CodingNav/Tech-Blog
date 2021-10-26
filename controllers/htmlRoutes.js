@@ -15,8 +15,8 @@ router.get('/', async (req, res) => {
     const posts = postData.map((post) => post.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
-      posts, 
+    res.render('homepage', {
+      posts,
       logged_in: req.session.logged_in
     });
   } catch (err) {
@@ -74,6 +74,14 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+router.get('/newpost', withAuth, (req, res) => {
+  res.render('newPost', {
+    // can only go on new post page if the user is logged in
+    // therefore, logged_in has to be true
+    logged_in: true
+  });
 });
 
 module.exports = router;
