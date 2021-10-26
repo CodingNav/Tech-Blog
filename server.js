@@ -10,7 +10,12 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const hbs = exphbs.create({});
+const hbs = exphbs.create({
+  // Specify helpers which are only registered on this instance.
+  helpers: {
+      dateFormat: require('handlebars-dateformat'),
+  }
+});
 
 const sess = {
   secret: 'Super secret secret',
@@ -34,6 +39,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Server listening on: http://localhost:' + PORT));
 });
