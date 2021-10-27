@@ -1,0 +1,20 @@
+<div class="columns">
+    <div class="column">
+        <article class="message">
+            <div class="message-header">
+                <p>{{title}}</p>
+                <p>Posted by {{user.username}} on {{dateFormat date_created "M/D/YY"}}</p>
+            </div>
+            <div class="message-body">{{message}}</div>
+        </article>
+    </div>
+</div>
+
+<div class="columns">
+    <div class="column">
+        <p>Comment</p>
+        <input id="comment-input" class="input" placeholder="Comment" value="">
+        <button class="button is-primary">Submit</button>
+    </div>
+</div>
+
