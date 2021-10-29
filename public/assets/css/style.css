@@ -1,3 +1,20 @@
+/* navbar */
+#logo {
+    font-family: 'Jua', sans-serif;
+    font-size: 35px;
+    color: black;
+}
+
+#logo i {
+    color: #00d1b2;
+
+}
+
+/* homepage */
+.heading {
+    font-size: 40px;
+}
+
 #new-post-btn {
     padding-left: 6px;
     text-indent: 10px;
