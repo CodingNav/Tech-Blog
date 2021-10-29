@@ -13,8 +13,19 @@
 <div class="columns">
     <div class="column">
         <p>Comment</p>
-        <input id="comment-input" class="input" placeholder="Comment" value="">
-        <button class="button is-primary">Submit</button>
+        <input id="comment-input" class="input" placeholder="Comment" value="" data-postid="{{id}}">
+        <button id="comment-btn" class="button is-primary">Submit</button>
     </div>
 </div>
 
+{{#each comments as |comment|}}
+<div class="columns">
+    <div class="column">
+        <p>Name {{comment.user.username}}</p>
+        <p>Date {{dateFormat comment.date_created "M/D/YY"}}</p>
+        <p>Comment {{comment.comment}}</p>
+    </div>
+</div>
+{{/each}}
+
+<script src="/assets/js/comment.js"
