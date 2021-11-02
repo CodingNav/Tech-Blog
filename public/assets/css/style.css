@@ -10,9 +10,46 @@
 
 }
 
-/* homepage */
 .heading {
     font-size: 40px;
+}
+
+/* homepage */
+.homepage {
+    padding: 50px;
+}
+
+.homepage .message {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+
+.homepage .message-header {
+    padding: 1.25em 1.5em 0em;
+    font-weight: 300;
+    color: #4a4a4a;
+    background-color: unset;
+}
+
+.homepage .message-body {
+    padding: .5em 1.5em 1.25em;
+}
+
+.homepage .message-footer button {
+    border-radius: 30px;
+}
+
+.homepage .message-footer p {
+    display: inline;
+}
+
+.homepage #post-title {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.homepage #post-message {
+    padding-bottom: 20px;
 }
 
 #new-post-btn {
