@@ -20,19 +20,32 @@
 }
 
 .homepage .message {
+    color: #4a4a4a !important;
     background-color: #f1f1f1;
     border-radius: 20px;
 }
 
+.homepage .message:hover {
+    box-shadow: 0 4px 8px 0 #00000044, 0 6px 20px 0 #00000044;
+    color: #f1f1f1 !important;
+    background-color: #3a3a3a;
+}
+
 .homepage .message-header {
+    margin-left: 10px;
     padding: 1.25em 1.5em 0em;
     font-weight: 300;
-    color: #4a4a4a;
+    color: unset;
     background-color: unset;
 }
 
 .homepage .message-body {
     padding: .5em 1.5em 1.25em;
+    color: unset;
+}
+
+.homepage #post-info {
+    margin-left: 10px;
 }
 
 .homepage .message-footer button {
@@ -40,7 +53,9 @@
 }
 
 .homepage .message-footer p {
-    display: inline;
+    padding-top: 8px;
+    padding-left: 20px;
+    display: inline-block;
 }
 
 .homepage #post-title {
@@ -51,6 +66,14 @@
 .homepage #post-message {
     padding-bottom: 20px;
 }
+
+/* .homepage .message-header:hover {
+    color: #f1f1f1;
+}
+
+.homepage .message-body:hover {
+    color: #f1f1f1;
+} */
 
 #new-post-btn {
     padding-left: 6px;
