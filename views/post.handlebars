@@ -1,16 +1,19 @@
-<div class="columns">
+<div class="columns m-5">
+    <div class="column is-1">
+        <p>Share</p>
+        <i class="fab fa-twitter"></i> <br>
+        <i class="fab fa-facebook-f"></i><br>
+        <i class="fab fa-linkedin"></i><br>
+        <i class="fab fa-instagram"></i>
+    </div>
     <div class="column">
-        <article class="message">
-            <div class="message-header">
                 <p>{{title}}</p>
                 <p>Posted by {{user.username}} on {{dateFormat date_created "M/D/YY"}}</p>
-            </div>
-            <div class="message-body">{{message}}</div>
-        </article>
+                {{message}}
     </div>
 </div>
 
-<div class="columns">
+<div class="columns m-5">
     <div class="column">
         <p>Comment</p>
         <input id="comment-input" class="input" placeholder="Comment" value="" data-postid="{{id}}">
@@ -19,7 +22,7 @@
 </div>
 
 {{#each comments as |comment|}}
-<div class="columns">
+<div class="columns m-5">
     <div class="column">
         <p>Name {{comment.user.username}}</p>
         <p>Date {{dateFormat comment.date_created "M/D/YY"}}</p>
