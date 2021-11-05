@@ -3,7 +3,7 @@ const editPostHandler = async (event) => {
 
     const title = document.querySelector('#title-input').value.trim();
     const message = document.querySelector('#message-input').value.trim();
-    const id = document.querySelector('editPost-form').dataset.id;ß
+    const id = document.querySelector('.editPost-form').dataset.id;
 
     if (title && message) {
         const response = await fetch('/api/posts/' + id, {
