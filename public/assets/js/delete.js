@@ -1,20 +1,18 @@
-const deletePostHandler = async (event) => {
-    event.preventDefault();
+document.querySelectorAll('.delete').forEach(item => {
+    item.addEventListener('click', async event => {
+        event.preventDefault();
 
-    const id = document.querySelector('.delete').dataset.id;
+        const id = item.dataset.id;
 
-    const response = await fetch('/api/posts/' + id, {
-        method: 'DELETE',
-        headers: { 'Content-Type': 'application/json' },
+        const response = await fetch('/api/posts/' + id, {
+            method: 'DELETE',
+            headers: { 'Content-Type': 'application/json' },
+        });
+
+        if (response.ok) {
+            document.location.replace('/dashboard');
+        } else {
+            alert(response.statusText);
+        }
     });
-
-    if (response.ok) {
-        document.location.replace('/dashboard');
-    } else {
-        alert(response.statusText);
-    }
-}
-
-document
-    .querySelector('.delete')
-    .addEventListener('click', deletePostHandler);
+})
