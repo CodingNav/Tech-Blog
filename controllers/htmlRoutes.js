@@ -81,7 +81,6 @@ router.get('/login', (req, res) => {
     res.redirect('/');
     return;
   }
-
   res.render('login');
 });
 
@@ -91,6 +90,27 @@ router.get('/newpost', withAuth, (req, res) => {
     // therefore, logged_in has to be true
     logged_in: true
   });
+});
+
+router.get('/edit/:id', withAuth, (req, res) => {
+  try {
+    const postData = await Post.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['username'],
+        }
+      ],
+    });
+
+    const post = postData.get({ plain: true });
+    res.render('edit', {
+      ...post,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;

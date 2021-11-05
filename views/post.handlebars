@@ -7,9 +7,9 @@
         <i class="fab fa-instagram"></i>
     </div>
     <div class="column">
-                <p>{{title}}</p>
-                <p>Posted by {{user.username}} on {{dateFormat date_created "M/D/YY"}}</p>
-                {{message}}
+                <p id="post-page-title">{{title}}</p>
+                <p id="post-page-creds">Posted by {{user.username}} on {{dateFormat date_created "M/D/YY"}}</p>
+                <p>{{message}}</p>
     </div>
 </div>
 
@@ -17,7 +17,7 @@
     <div class="column">
         <p>Comment</p>
         <input id="comment-input" class="input" placeholder="Comment" value="" data-postid="{{id}}">
-        <button id="comment-btn" class="button is-primary">Submit</button>
+        <button id="comment-btn" class="button is-primary mt-5">Submit</button>
     </div>
 </div>
 
@@ -31,4 +31,4 @@
 </div>
 {{/each}}
 
-<script src="/assets/js/comment.js"
+<script src="/assets/js/comment.js"></script>
