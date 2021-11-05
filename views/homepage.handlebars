@@ -14,13 +14,11 @@
                     {{!-- <p>Posted by {{post.user.username}} on {{dateFormat post.date_created "M/D/YY"}}</p> --}}
                 </div>
                 <div class="message-body">
-                    <div id="post-info">
-                        <div id="post-title">
+                    <div class="post-info">
+                        <div class="post-title">
                             {{post.title}}
                         </div>
-                        <div id="post-message">
-                            {{post.message}}
-                        </div>
+                        <div class="post-message">{{post.message}}</div>
                     </div>
                     <div class="message-footer">
                         <button class="button is-primary">Read Full Post</button>
@@ -32,3 +30,5 @@
     </div>
     {{/each}}
 </div>
+
+    <script src="/assets/js/ellipsis.js"></script>
