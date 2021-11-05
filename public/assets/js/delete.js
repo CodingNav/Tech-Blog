@@ -15,4 +15,4 @@ document.querySelectorAll('.delete').forEach(item => {
             alert(response.statusText);
         }
     });
-})
+});
