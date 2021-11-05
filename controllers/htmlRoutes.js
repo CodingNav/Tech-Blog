@@ -92,7 +92,7 @@ router.get('/newpost', withAuth, (req, res) => {
   });
 });
 
-router.get('/edit/:id', withAuth, (req, res) => {
+router.get('/edit/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
@@ -104,10 +104,17 @@ router.get('/edit/:id', withAuth, (req, res) => {
     });
 
     const post = postData.get({ plain: true });
-    res.render('edit', {
-      ...post,
-      logged_in: req.session.logged_in
-    });
+    if (post.user_id == req.session.user_id) {
+      res.render('edit', {
+        ...post,
+        logged_in: req.session.logged_in
+      });
+    }
+    else {
+      res.render('error', {
+        message: "You do not have access"
+      });
+    }
   } catch (err) {
     res.status(500).json(err);
   }
