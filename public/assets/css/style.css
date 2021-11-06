@@ -77,9 +77,25 @@
     padding-bottom: 20px;
 }
 
-#new-post-btn {
-    padding-left: 6px;
-    text-indent: 10px;
+#post-page-msg {
+    white-space: pre-wrap;
+}
+
+.socials {
+    text-align: center;
+    font-size: 25px;
+}
+
+.socials p {
+    padding-bottom: 15px;
+}
+
+.socials i {
+    padding-bottom: 15px;
+}
+
+.socials i:hover {
+    color: #00d1b2;
 }
 
 /* dashboard page */
@@ -89,4 +105,9 @@
 
 .dashboard .message-body{
     white-space: pre-wrap;
+}
+
+#new-post-btn {
+    padding-left: 6px;
+    text-indent: 10px;
 }
