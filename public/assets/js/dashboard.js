@@ -16,3 +16,11 @@ document.querySelectorAll('.delete').forEach(item => {
         }
     });
 });
+
+document.querySelectorAll(".edit").forEach(item => {
+    item.addEventListener('click', event => {
+        event.preventDefault();
+
+        window.location = item.dataset.href;
+    });
+});

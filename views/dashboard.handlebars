@@ -13,18 +13,20 @@
 {{#each posts as |post|}}
 <div class="dashboard columns">
     <div class="column">
-        <article class="message">
-            <div class="message-header">
-                <p>{{post.title}}</p>
-                <div>
-                    <a href="/edit/{{post.id}}"><i class="far fa-edit"></i></a>
-                    <button class="delete" aria-label="delete" data-id="{{post.id}}"></button>
+        <a href="/post/{{post.id}}">
+            <article class="message">
+                <div class="message-header">
+                    <p>{{post.title}}</p>
+                    <div>
+                        <i class="edit far fa-edit" data-href="/edit/{{post.id}}"></i>
+                        <button class="delete" aria-label="delete" data-id="{{post.id}}"></button>
+                    </div>
                 </div>
-            </div>
-            <div class="message-body">{{post.message}}</div>
-        </article>
+                <div class="message-body">{{post.message}}</div>
+            </article>
+        </a>
     </div>
 </div>
 {{/each}}
 
-<script src="/assets/js/delete.js"></script>
+<script src="/assets/js/dashboard.js"></script>
