@@ -16,7 +16,7 @@
 
 /* homepage */
 .homepage {
-    padding: 50px;
+    padding: 10px 100px;
 }
 
 .homepage .message {
@@ -66,13 +66,6 @@
 .homepage .post-message {
     padding-bottom: 20px;
     white-space: pre-wrap;
-    /* display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: "[more]";
-    height: 105px; */
-
 }
 
 /* post page */
@@ -87,4 +80,13 @@
 #new-post-btn {
     padding-left: 6px;
     text-indent: 10px;
+}
+
+/* dashboard page */
+.dashboard {
+    padding: 10px 100px;
+}
+
+.dashboard .message-body{
+    white-space: pre-wrap;
 }

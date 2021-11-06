@@ -4,8 +4,8 @@
     </div>
 </div>
 
+{{#each posts as |post|}}
 <div class="homepage columns">
-    {{#each posts as |post|}}
     <div class="column">
         <a href="/post/{{post.id}}">
             <article class="message">
@@ -28,7 +28,6 @@
             </article>
         </a>
     </div>
-    {{/each}}
 </div>
-
-    <script src="/assets/js/ellipsis.js"></script>
+{{/each}}
+<script src="/assets/js/ellipsis.js"></script>

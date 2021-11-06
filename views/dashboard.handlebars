@@ -10,8 +10,8 @@
     </div>
 </div>
 
-<div class="columns">
-    {{#each posts as |post|}}
+{{#each posts as |post|}}
+<div class="dashboard columns">
     <div class="column">
         <article class="message">
             <div class="message-header">
@@ -24,7 +24,7 @@
             <div class="message-body">{{post.message}}</div>
         </article>
     </div>
-    {{/each}}
 </div>
+{{/each}}
 
 <script src="/assets/js/delete.js"></script>
