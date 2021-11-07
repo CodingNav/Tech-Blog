@@ -14,6 +14,12 @@
     font-size: 40px;
 }
 
+/* footer */
+.footer {
+    color: white;
+    background-color: #00d1b2;
+}
+
 /* homepage */
 .homepage {
     padding: 10px 100px;
