@@ -118,7 +118,7 @@
 }
 
 #footer-one {
-    margin-top: 200px;
+    margin-top: 100px;
     padding: 50px 50px;
     background-color: #666666;
 }
@@ -131,11 +131,16 @@
 #footer-two #footer-logo {
     font-family: 'Jua', sans-serif;
     font-size: 35px;
+    line-height: 120px;
     color: #ffffff;
 }
 
 #footer-two #footer-logo i {
     color: #ffffff;
+}
+
+#footer-two #socials {
+    line-height: 120px;
 }
 
 #footer-two #socials p {
@@ -148,6 +153,23 @@
     font-size: 20px;
 }
 
+#footer-two #socials i:hover {
+    color: #29a994;
+}
+
+.footer-btn {
+    margin: 0px 10px;
+    border: none;
+    border-radius: 30px !important;
+    color: white;
+    background-color: #29a994;
+}
+
+#footer-btn .button.is-hovered, .button:hover {
+    color: white;
+    background-color: #238676;
+}
+
 #footer-copyright {
     color: #9fefe1;
 }
@@ -157,5 +179,5 @@
 }
 
 #footer-copyright a:hover {
-    color: #257a6c;
+    color: #29a994;
 }
