@@ -123,6 +123,18 @@
     background-color: #666666;
 }
 
+#footer-one h3 {
+    color: white;
+}
+
+#footer-one a {
+    color: white;
+}
+
+#footer-one a:hover {
+    color: #9b9b9b;
+}
+
 #footer-two {
     padding: 30px 50px 15px;
     background-color: #00d1b2;
