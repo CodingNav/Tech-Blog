@@ -3,8 +3,6 @@ const newCommentHandler = async (event) => {
 
     const comment = document.querySelector('#comment-input').value.trim();
     const post_id = document.querySelector('#comment-input').dataset.postid;
-    console.log(comment);
-    console.log(post_id);
 
     if (post_id && comment) {
         const response = await fetch('/api/comments', {
