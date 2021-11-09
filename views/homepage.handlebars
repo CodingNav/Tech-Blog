@@ -11,7 +11,6 @@
             <article class="message">
                 <div class="message-header">
                     <p>{{dateFormat post.date_created "D MMM YYYY"}}</p>
-                    {{!-- <p>Posted by {{post.user.username}} on {{dateFormat post.date_created "M/D/YY"}}</p> --}}
                 </div>
                 <div class="message-body">
                     <div class="post-info">
@@ -22,7 +21,7 @@
                     </div>
                     <div class="message-footer">
                         <button class="button is-primary">Read Full Post</button>
-                        <img src="/assets/images/profile.png">
+                        <img class="profile-img" src="/assets/images/profile.png">
                         <p>By {{post.user.username}}</p>
                     </div>
                 </div>

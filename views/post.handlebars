@@ -1,6 +1,6 @@
 <div class="columns m-5">
-    <div class="socials column is-1">
-        <p>Share</p>
+    <div class="socials column is-1 mr-3">
+        <p class="has-text-primary">Share</p>
         <i class="fab fa-twitter"></i> <br>
         <i class="fab fa-facebook-f"></i><br>
         <i class="fab fa-linkedin"></i><br>
@@ -8,7 +8,11 @@
     </div>
     <div class="column">
         <p id="post-page-title">{{title}}</p>
-        <p id="post-page-creds">Posted by {{user.username}} on {{dateFormat date_created "M/D/YY"}}</p>
+        <div id="post-user" class="mb-6">
+            <p id="post-page-creds">Posted by</p>
+            <img class="profile-img" src="/assets/images/profile.png">
+            <p>{{user.username}} on {{dateFormat date_created "M/D/YY"}}</p>
+        </div>
         <p id="post-page-msg">{{message}}</p>
     </div>
 </div>

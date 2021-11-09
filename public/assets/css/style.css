@@ -44,8 +44,6 @@
     color: unset;
 }
 
-
-
 .homepage .post-info {
     margin-left: 10px;
 }
@@ -54,7 +52,7 @@
     border-radius: 30px;
 }
 
-.homepage .message-footer img {
+.profile-img {
     margin-left: 20px;
     width: 40px;
     height: 40px;
@@ -82,6 +80,20 @@
 /* post page */
 #post-page-title {
     font-size: 50px;
+}
+
+#post-user p {
+    position: absolute;
+    transform: translateY(8px);
+    display: inline-block;
+}
+
+#post-user img {
+    margin-left: 85px;
+}
+
+#post-user p:last-child {
+    padding-left: 5px;
 }
 
 #post-page-creds {
