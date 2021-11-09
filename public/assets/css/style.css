@@ -14,12 +14,6 @@
     font-size: 40px;
 }
 
-/* footer */
-.footer {
-    color: white;
-    background-color: #00d1b2;
-}
-
 /* homepage */
 .homepage {
     padding: 10px 100px;
@@ -34,7 +28,7 @@
 .homepage .message:hover {
     box-shadow: 0 4px 8px 0 #00000044, 0 6px 20px 0 #00000044;
     color: #f1f1f1 !important;
-    background-color: #3a3a3a;
+    background-color: #628b89;
 }
 
 .homepage .message-header {
@@ -116,4 +110,52 @@
 #new-post-btn {
     padding-left: 6px;
     text-indent: 10px;
+}
+
+/* footer */
+.footer {
+    color: white;
+}
+
+#footer-one {
+    margin-top: 200px;
+    padding: 50px 50px;
+    background-color: #666666;
+}
+
+#footer-two {
+    padding: 30px 50px 15px;
+    background-color: #00d1b2;
+}
+
+#footer-two #footer-logo {
+    font-family: 'Jua', sans-serif;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+#footer-two #footer-logo i {
+    color: #ffffff;
+}
+
+#footer-two #socials p {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+#footer-two #socials i {
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+#footer-copyright {
+    color: #9fefe1;
+}
+
+#footer-copyright a {
+    color: #9fefe1;
+}
+
+#footer-copyright a:hover {
+    color: #257a6c;
 }
