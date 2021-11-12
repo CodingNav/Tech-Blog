@@ -68,12 +68,15 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 ```
 
 
-<!-- ## Technologies
+## Technologies
 ### Front End
 <img align="middle" src="./public/assets/images/html_css.png" alt="HTML5 and CSS" width="25%"/>&nbsp; &nbsp;
-<img align="middle" src="./public/assets/images/bootstrap.png" alt="Bulma" width="12%"/>&nbsp; &nbsp; &nbsp; 
-<img align="middle" src="./public/assets/images/bootstrap.png" alt="Handlebars" width="12%"/>&nbsp; &nbsp; &nbsp; 
-<img align="middle" src="./public/assets/images/js.jpg" alt="Javascript" width="10%"/>&nbsp; &nbsp; &nbsp; 
+<img align="middle" src="./public/assets/images/bulma.png" alt="Bulma" width="20%"/>&nbsp; &nbsp; &nbsp; 
+<img align="middle" src="./public/assets/images/handlebars.png" alt="Handlebars" width="15%"/>&nbsp; &nbsp; &nbsp; 
+<img align="middle" src="./public/assets/images/js.jpg" alt="Javascript" width="10%"/>
+
 ### Back End
-<img align="middle" src="./public/assets/images/nodejs.png" alt="Nodejs" width="20%"/>
-<img align="middle" src="./public/assets/images/express.png" alt="Express" width="20%"/> -->
+<img align="middle" src="./public/assets/images/nodejs.png" alt="Nodejs" width="20%"/>&nbsp; &nbsp; &nbsp; 
+<img align="middle" src="./public/assets/images/expressjs.png" alt="Express" width="20%"/>&nbsp; &nbsp; &nbsp; 
+<img align="middle" src="./public/assets/images/mysql.png" alt="MySQL" width="20%"/>&nbsp; &nbsp; &nbsp; 
+<img align="middle" src="./public/assets/images/sequelize.png" alt="Sequelize" width="20%"/>
